@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
     <title>buh</title>
 </head>
 <body>
-<?php include header.php; ?>
-<?php include main.php; ?>
-<?php include footer.php; ?>
+<header>
+    <nav>
+        <div class="container">
+            <div>Главная</div>
+            <div>Услуги</div>
+            <div>Отзывы</div>
+            <div>Цены</div>
+            <div>Контакты</div>
+            <div>
+                <div>+79173572792</div>
+                <div>email</div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section>
+        <div class="container">
+            <div class="sentence">
+                <div class="sentence_item">
+                    <script src="js/lottie.js"></script>
+                    <script>
+                        lottie.loadAnimation({
+                        container: document.getElementById('tag-id-lottie'), // the dom element that will contain the animation
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        path: 'js/38793-remote-work.json' // the path to the animation json
+                    });
+                    </script>
+                </div>
+                <div class="sentence_item">
+                    <h2>С чего начать?</h2>
+                    <p>Получите бесплатную консультацию!</p>
+                    <button>Получить решение</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="cause">
+                <h2><b>6 важных причин</b>, почему клиенты выбирают нас</h2>
+
+                <div class="causes">
+                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                    <div>
+                    <h3>Многолетний опыт</h3>
+                    <p>Успешное решение вопросов на протяжении 20-ти лет</p>
+                    </div>
+                </div>
+                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                    <div>
+                    <h3>20-30%</h3>
+                    <p>цены ниже розничных на лучшие камеры</p>
+                    </div>
+                </div>
+                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                    <div>
+                    <h3>Комплексное решение задач</h3>
+                    <p>Успешно работаем и решаем многочисленные и разнообразные задачи наших клиентов</p>
+                    </div>
+                </div>
+                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                    <div>
+                    <h3>60%+</h3>
+                    <p>клиентов обратились к нам повторно</p>
+                    </div>
+                </div>
+                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                    <div>
+                    <h3>95%+</h3>
+                    <p>готовы порекомендовать нас своим друзьям</p>
+                    </div>
+                </div>
+                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                    <div>
+                    <h3>Нам доверяют</h3>
+                    <p>Более 30-ти компаний на обслуживании с 2000-го года</p>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h3>Тарифы|Услуги (цены на отдельной странице)</h3>
+            <div class="tariffs" id="tariffs">
+                <div class="item">
+                    <div class="item_head">
+                        <div class="item_title">ООО и АО</div>
+                        <div class="item_intro">Решения для компаний</div>
+                    </div>
+                    <ul>
+                        <li><a href="/services/buhgalterskie-uslugi/vedenie-buhgalterskogo-ucheta/vedenie-bukhgalterii-dlia-ooo.html">Ведение бухгалтерии</a></li><li><a href="/services/registraciya-firm/vnesenie-izmenenij-ustav-egryul.html">Изменения в уставе</a></li><li><a href="/services/registraciya-firm/reorganizaciya-ooo.html">Реорганизация</a></li><li><a href="/services/kadrovye-uslugi.html#ooo">Кадры</a></li><li><a href="/services/yuridicheskie-uslugi/zashhita-v-sude-arbitrazh.html">Юридическая защита</a></li><li><a href="/stati/sdacha-otchetnosti-dlia-ooo-ip.html#ooo">Сдача отчетности</a></li><li><a href="/services/nalogovye-spory/predstavlenie-interesov-nalogovoj-inspekcii.html#ooo">Представление интересов в налоговой</a></li><li><a href="/stati/optimizaciya-nalogooblozheniya.html">Оптимизация налогооблажения</a></li><li><a href="/services/registraciya-firm/likvidaciya-ooo.html">Ликвидация</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item_head">
+                        <div class="item_title">ИП</div>
+                        <div class="item_intro">Решения для индивидуальных предпринимателей</div>
+                    </div>
+                    <ul>
+                        <li><a href="/services/buhgalterskie-uslugi/vedenie-buhgalterskogo-ucheta/vedenie-bukhgalterii-ip.html">Ведение бухгалтерии</a></li><li><a href="/services/kadrovye-uslugi.html#ip">Кадры</a></li><li><a href="/stati/sdacha-otchetnosti-dlia-ooo-ip.html#ip">Сдача отчетности</a></li><li><a href="/stati/egrip.html">Внесение изменений в ЕГРИП</a></li><li><a href="/services/nalogovye-spory/predstavlenie-interesov-nalogovoj-inspekcii.html#ip">Представление интересов в налоговой</a></li><li><a href="/services/registraciya-firm/zakrytie-ip.html">Закрытие</a></li><li><a href="/stati/optimizaciya-nalogooblozheniya.html">Оптимизация налогооблажения</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item_head">
+                        <div class="item_title">Новый бизнес</div>
+                        <div class="item_intro"></div>
+                    </div>
+                    <ul>
+                        <li><a href="/services/registraciya-firm/registraciya-ooo-ao.html">Организация ООО</a></li><li><a href="/services/registraciya-firm/otkrytie-ip.html">Открытие ИП</a></li><li><a href="/stati/razrabotka-biznes-planov.html">Составление бизнес - планов</a></li><li><a href="/stati/soprovozhdenie-biznesa-na-nachalnom-etape.html">Сопровождение юридическое, налоговое, бухгатерское</a></li><li><a href="/stati/optimizaciya-nalogooblozheniya.html">Оптимизация налогооблажения</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">Наши проекты, кейсы, портфолио, решения</div>
+    </section>
+    <section>
+        <div class="container">Отзывы клиентов</div>
+    </section>
+    <section>
+        <div class="container">Наша команда</div>
+    </section>
+    <section>
+        <div class="container"></div>
+    </section>
+</main>
+<footer>
+    <nav>
+        <div class="container">
+            <div><a href="">политика конфиденциальности</a></div>
+            <div>соц.сети</div>
+            <div>
+                <div>+79173572792</div>
+                <div>email</div>
+            </div>
+        </div>
+    </nav>
+</footer>
 </body>
 </html>

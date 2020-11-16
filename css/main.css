@@ -1,0 +1,51 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tariffs {
+  display: flex;
+  justify-content: center;
+}
+.tariffs .item_head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tariffs .item_head .item_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tariffs .item_head .item_intro {
+  text-align: center;
+}
+
+.causes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.causes .cause_item {
+  display: flex;
+  align-items: center;
+}
+.causes .cause_item img {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

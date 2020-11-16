@@ -1,0 +1,50 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tariffs{
+  display: flex;
+  justify-content: center;
+  .item_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .item_title{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .item_intro{
+      text-align: center;
+    }
+  }
+}
+
+.causes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  .cause_item{
+    display: flex;
+    align-items: center;
+    img{
+      margin-right: 10px;
+    }
+  }
+}
+
