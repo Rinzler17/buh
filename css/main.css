@@ -212,7 +212,9 @@ footer .container .social {
   justify-content: flex-end;
 }
 footer .container .social a {
-  width: 8%;
+  display: flex;
+  align-items: center;
+  width: 15%;
   padding: 0 10px;
 }
 footer .container .social a img {
