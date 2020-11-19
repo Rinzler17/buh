@@ -4,6 +4,8 @@
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>buh</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.0/lottie.js"></script>
@@ -12,15 +14,15 @@
 <header>
     <nav>
         <div class="container">
-            <a href="index.html"><div>Главная</div></a>
-            <a href="#tariffs"><div>Услуги</div></a>
-            <a href="#review"><div>Отзывы</div></a>
-            <a href="price.html"><div>Цены</div></a>
-            <a href="#team"><div>Контакты</div></a>
-            <div class="contacts">
-                <a href="tel:+79173572792">+7 917 357 27 92</a>
-                <a href="mailto:antonturilov@gmail.com">antonturilov@gmail.com</a>
-            </div>
+            <p class="middle"><a href="index.html">Главная</a></p>
+            <p class="middle"><a href="#tariffs">Услуги</a></p>
+            <p class="middle"><a href="#review">Отзывы</a></p>
+            <p class="middle"><a href="price.html">Цены</a></p>
+            <p class="middle"><a href="#team">Контакты</a></p>
+            <p class="middle"><a href="tel:+79173572792">+7 917 357 27 92</a></p>
+            <label class="modal-btn" for="modal-toggle">Обратный звонок</label>
+
+
         </div>
     </nav>
 </header>
@@ -156,16 +158,17 @@
                     <div class="team_item_description">
                         <h3>Турилова Оксана</h3>
                         <p>Крутой специалист, знающий бухгалтерию вдоль и поперек с 2020-го года</p>
+                        <div class="team_item_achievements">
+                            <h3>Достижения:</h3>
+                            <div class="team_item_achievements_items">
+                                <div class="team_item_achievements_item"><img src="img/certificate/certificate.jpg" alt=""></div>
+                                <div class="team_item_achievements_item"><img src="img/certificate/certificate_1.jpg" alt=""></div>
+                            </div>
+                        </div>
 
                     </div>
                     </div>
-                    <div class="team_item_achievements">
-                        <h3>Достижения:</h3>
-                        <div class="team_item_achievements_items">
-                        <div class="team_item_achievements_item"><img src="img/certificate/certificate.jpg" alt=""></div>
-                        <div class="team_item_achievements_item"><img src="img/certificate/certificate_1.jpg" alt=""></div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -177,10 +180,10 @@
 <footer>
     <nav>
         <div class="container">
-            <div><a href="privacy.html">политика конфиденциальности</a></div>
+            <div>©2020 "ИП Турилова О.В." <a href="privacy.html">Политика конфиденциальности</a></div>
             <div class="social">
-                <img src="img/icons/vk.svg" alt="">
-                <img src="img/icons/instagram.svg" alt="">
+                <a href="https://vk.com/id106121354"><img src="img/icons/vk.svg" alt=""></a>
+                <a href="https://www.instagram.com/kseniya_fins/"><img src="img/icons/instagram.svg" alt=""></a>
             </div>
             <div class="contacts">
                 <a href="tel:+79173572792">+7 917 357 27 92</a>
@@ -191,17 +194,37 @@
 </footer>
 
 
+<div class="modal-container">
+    <input id="modal-toggle" type="checkbox">
+
+    <label class="modal-backdrop" for="modal-toggle"></label>
+    <div class="modal-content">
+        <label class="modal-close" for="modal-toggle">&#x2715;</label>
+        <h2>Обратный звонок</h2><hr />
+        <form action="php/sendmail.php" method="post">
+            <input type="text" name="name">
+            <input type="tel" name="phone">
+            <button type="submit">Отправить</button>
+        </form>
+        <label class="modal-content-btn" for="modal-toggle">OK</label>
+    </div>
+</div>
+
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
 
 <script>
 $('.autoplay').slick({
-slidesToShow: 3,
+slidesToShow: 4,
 slidesToScroll: 1,
 autoplay: true,
 autoplaySpeed: 2000,
 });
 </script>
+
+
 
 </body>
 </html>
