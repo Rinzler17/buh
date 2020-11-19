@@ -1,3 +1,7 @@
+section{
+  margin: 40px 0;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -7,14 +11,35 @@ header .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  .contacts{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 footer .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  .contacts{
+    display: flex;
+    flex-direction: column;
+  }
+  .social{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 15%;
+      padding: 0 10px;
+    }
+  }
 }
 
+.tariffs_head{
+  text-align: center;
+}
 .tariffs{
   display: flex;
   justify-content: center;
@@ -38,12 +63,12 @@ footer .container {
 .causes{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 30px;
   .cause_item{
     display: flex;
     align-items: center;
     img{
-      margin-right: 10px;
+      margin-right: 20px;
     }
   }
 }
@@ -52,4 +77,83 @@ footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.review{
+  .review_item{
+    img{
+      width: inherit;
+      height: inherit;
+      border-radius: 10px;
+    }
+  }
+  .slick-initialized .slick-slide{
+    margin: 0 20px;
+  }
+}
+
+.team{
+  .team_items{
+    .team_item{
+      display: flex;
+      .team_item_img{
+        display: flex;
+        justify-content: center;
+        img{
+          width: 50%;
+        }
+      }
+    }
+    .team_item_achievements{
+      h3{
+        margin-left: 20px;
+      }
+      .team_item_achievements_items{
+        display: flex;
+        .team_item_achievements_item{
+          width: min-content;
+          min-width: 30%;
+          img{
+            max-width: 100%;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.privacy{
+  .privacy_nav{
+    display: flex;
+    align-items: center;
+    .privacy_nav_item{
+      margin-right: 10px;
+      &:last-child{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.price{
+  .items{
+    .item{
+      display: flex;
+      justify-content: space-between;
+      line-height: 30px;
+      padding: 5px;
+      &:hover{
+        background-color: darkblue;
+        color: white;
+      }
+    }
+    .item-group{
+
+    }
+  }
+  .gropu-title{
+    text-align: center;
+    line-height: 30px;
+  }
 }

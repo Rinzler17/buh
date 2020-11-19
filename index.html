@@ -12,14 +12,14 @@
 <header>
     <nav>
         <div class="container">
-            <div>Главная</div>
-            <div>Услуги</div>
-            <div>Отзывы</div>
-            <div>Цены</div>
-            <div>Контакты</div>
-            <div>
-                <div>+79173572792</div>
-                <div>email</div>
+            <a href="index.html"><div>Главная</div></a>
+            <a href="#tariffs"><div>Услуги</div></a>
+            <a href="#review"><div>Отзывы</div></a>
+            <a href="price.html"><div>Цены</div></a>
+            <a href="#team"><div>Контакты</div></a>
+            <div class="contacts">
+                <a href="tel:+79173572792">+7 917 357 27 92</a>
+                <a href="mailto:antonturilov@gmail.com">antonturilov@gmail.com</a>
             </div>
         </div>
     </nav>
@@ -54,37 +54,37 @@
                 <h2><b>6 важных причин</b>, почему клиенты выбирают нас</h2>
 
                 <div class="causes">
-                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                <div class="cause_item"><img src="img/icons/checkmark.svg" width="80px" alt="">
                     <div>
                     <h3>Многолетний опыт</h3>
                     <p>Успешное решение вопросов на протяжении 20-ти лет</p>
                     </div>
                 </div>
-                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                <div class="cause_item"><img src="img/icons/statistics.svg" width="80px" alt="">
                     <div>
                     <h3>50-60%</h3>
                     <p>Ваша экономия на штатном сотруднике бухгалтерии</p>
                     </div>
                 </div>
-                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                <div class="cause_item"><img src="img/icons/calculator.svg" width="80px" alt="">
                     <div>
                     <h3>Решим задачу любой сложности</h3>
                     <p>Успешный опыт прохождения камеральных и выездных налоговых проверок</p>
                     </div>
                 </div>
-                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                <div class="cause_item"><img src="img/icons/chatting.svg" width="80px" alt="">
                     <div>
                     <h3>85%+</h3>
                     <p>Клиентов обратилось к нам после первичной консультации</p>
                     </div>
                 </div>
-                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                <div class="cause_item"><img src="img/icons/loud-speaker.svg" width="80px" alt="">
                     <div>
                     <h3>95%+</h3>
                     <p>Готовы порекомендовать нас своим друзьям</p>
                     </div>
                 </div>
-                <div class="cause_item"><img src="img/test.svg" width="80px" alt="">
+                <div class="cause_item"><img src="img/icons/like.svg" width="80px" alt="">
                     <div>
                     <h3>Нам доверяют</h3>
                     <p>Более 30-ти компаний на обслуживании с 2000-го года</p>
@@ -97,7 +97,7 @@
     </section>
     <section>
         <div class="container">
-            <h3>Тарифы|Услуги (цены на отдельной странице)</h3>
+            <h3 class="tariffs_head">Услуги</h3>
             <div class="tariffs" id="tariffs">
                 <div class="item">
                     <div class="item_head">
@@ -130,25 +130,45 @@
         </div>
     </section>
     <section>
-        <div class="container">Наши проекты, кейсы, портфолио, решения</div>
+        <div class="container">Наши проекты, кейсы, портфолио, решения (в разработке)</div>
     </section>
     <section>
-        <div class="container">Отзывы клиентов
+        <div class="container">
+            <div class="review" id="review">
             <div class="autoplay">
-                <div style="width: 100px; height: 200px;">your content</div>
-                <div style="width: 100px; height: 200px;">your content</div>
-                <div style="width: 100px; height: 200px;">your content</div>
-                <div style="width: 100px; height: 200px;">your content</div>
-                <div style="width: 100px; height: 200px;">your content</div>
-                <div style="width: 100px; height: 200px;">your content</div>
-                <div style="width: 100px; height: 200px;">your content</div>
-                <div style="width: 100px; height: 200px;">your content</div>
-                <div style="width: 100px; height: 200px;">your content</div>
+                <div class="review_item"><img src="img/review/alta.jpg" alt=""></div>
+                <div class="review_item"><img src="img/review/pegas.jpg" alt=""></div>
+                <div class="review_item"><img src="img/review/present.jpg" alt=""></div>
+                <div class="review_item"><img src="img/review/spec.jpg" alt=""></div>
+            </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="container">Наша команда</div>
+        <div class="container">
+            <div class="team" id="team">
+                <div class="team_items">
+                    <div class="team_item">
+                    <div class="team_item_img">
+                        <img src="img/test.svg" alt="">
+
+                    </div>
+                    <div class="team_item_description">
+                        <h3>Турилова Оксана</h3>
+                        <p>Крутой специалист, знающий бухгалтерию вдоль и поперек с 2020-го года</p>
+
+                    </div>
+                    </div>
+                    <div class="team_item_achievements">
+                        <h3>Достижения:</h3>
+                        <div class="team_item_achievements_items">
+                        <div class="team_item_achievements_item"><img src="img/certificate/certificate.jpg" alt=""></div>
+                        <div class="team_item_achievements_item"><img src="img/certificate/certificate_1.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section>
         <div class="container"></div>
@@ -157,11 +177,14 @@
 <footer>
     <nav>
         <div class="container">
-            <div><a href="">политика конфиденциальности</a></div>
-            <div>соц.сети</div>
-            <div>
-                <div>+79173572792</div>
-                <div>email</div>
+            <div><a href="privacy.html">политика конфиденциальности</a></div>
+            <div class="social">
+                <img src="img/icons/vk.svg" alt="">
+                <img src="img/icons/instagram.svg" alt="">
+            </div>
+            <div class="contacts">
+                <a href="tel:+79173572792">+7 917 357 27 92</a>
+                <a href="mailto:antonturilov@gmail.com">antonturilov@gmail.com</a>
             </div>
         </div>
     </nav>
