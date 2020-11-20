@@ -9,12 +9,11 @@ body *, body *:before, body *:after {
   box-sizing: border-box;
 }
 body body {
-  height: 100vh;
   background: #ccc;
   overflow: hidden;
 }
 body .modal-container {
-  margin: 60px auto;
+  /*margin: 60px auto;*/
   padding-top: 0px;
   position: relative;
   width: 160px;
@@ -123,7 +122,7 @@ body .modal-container #modal-toggle.active ~ .modal-content, body .modal-contain
 }
 
 section {
-  margin: 40px 0;
+  margin: 80px 0;
 }
 
 .container {
@@ -245,16 +244,19 @@ footer .container .social a img {
   text-align: center;
 }
 
-.causes {
+.cause h2 {
+  text-align: center;
+}
+.cause .causes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
-.causes .cause_item {
+.cause .causes .cause_item {
   display: flex;
   align-items: center;
 }
-.causes .cause_item img {
+.cause .causes .cause_item img {
   margin-right: 20px;
 }
 
@@ -264,6 +266,27 @@ footer .container .social a img {
   align-items: center;
 }
 
+.keys h2 {
+  text-align: center;
+}
+.keys .keys_items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.keys .keys_items .keys_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.keys .keys_items .keys_item img {
+  width: 30%;
+}
+
+.review h2 {
+  text-align: center;
+}
 .review .review_item img {
   width: inherit;
   height: inherit;
