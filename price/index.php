@@ -1,3 +1,4 @@
+<html>
 <head>
     <link type="text/css" rel="stylesheet" href="../css/main.css">
     <meta charset="UTF-8">
@@ -123,3 +124,4 @@
 
 
 </body>
+</html>
