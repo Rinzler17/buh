@@ -5,6 +5,20 @@ body{
   font-family: 'PT Sans', sans-serif;
   font-size: 1.1em;
 
+
+
+  button{
+    padding: 7px;
+    border-radius: 15px;
+    background-color: #324577;
+    border: none;
+    color: #e4e4e2;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+
   /* MODAL */
 
   *, *:before, *:after { box-sizing: border-box; }
@@ -209,6 +223,13 @@ footer .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color: #00aeff;
+    }
+  }
   .contacts{
     display: flex;
     flex-direction: column;
@@ -223,6 +244,9 @@ footer .container {
       padding: 0 10px;
       img {
         width: 100%;
+        &:hover{
+          filter: opacity(0.5);
+        }
 
       }
     }
@@ -235,11 +259,21 @@ footer .container {
 .tariffs{
   display: flex;
   justify-content: center;
+
+  a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: #00aeff;
+      }
+  }
+
   .item_head{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100px;
     .item_title{
       display: flex;
       flex-direction: column;
@@ -304,6 +338,8 @@ footer .container {
       width: inherit;
       height: inherit;
       border-radius: 10px;
+      max-height: -webkit-fill-available;
+      max-width: -webkit-fill-available;
     }
   }
   .slick-initialized .slick-slide{
@@ -367,10 +403,15 @@ footer .container {
       justify-content: space-between;
       line-height: 30px;
       padding: 5px;
+      border-bottom: 1px solid #e4e4e2;
       &:hover{
         background-color: #324577;
         color: #e4e4e2;
       }
+      &:last-child{
+        border-bottom: none;
+      }
+
     }
     .item-group{
 
