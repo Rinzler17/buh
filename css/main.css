@@ -16,7 +16,8 @@ body button {
   font-size: 0.9em;
 }
 body button:hover {
-  opacity: 0.5;
+  background-color: #00aeff;
+  box-shadow: 0 0 10px #00aeff;
   cursor: pointer;
 }
 body *, body *:before, body *:after {
@@ -67,7 +68,7 @@ body .modal-container .modal-backdrop h2 {
 }
 body .modal-container .modal-content form,
 body .modal-container .modal-backdrop form {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   color: #f5f5f5;
 }
@@ -101,7 +102,7 @@ body .modal-container .modal-content-btn {
   background: #446CB3;
   color: #fff;
   width: 50px;
-  border-radius: 2px;
+  border-radius: 10px;
   font-size: 14px;
   height: 32px;
   padding-top: 9px;
@@ -185,6 +186,84 @@ body .modal-container #modal-toggle_2.active ~ .modal-content, body .modal-conta
 }
 @media (max-width: 400px) {
   body .modal-container #modal-toggle_2.active ~ .modal-content, body .modal-container #modal-toggle_2:checked ~ .modal-content {
+    left: 0;
+  }
+}
+body .modal-container #modal-toggle_3 {
+  display: none;
+}
+body .modal-container #modal-toggle_3.active ~ .modal-backdrop, body .modal-container #modal-toggle_3:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+body .modal-container #modal-toggle_3.active ~ .modal-content, body .modal-container #modal-toggle_3:checked ~ .modal-content {
+  background-image: url("../img/background/neft.jpg");
+  background-position: top;
+  background-size: cover;
+  opacity: 1;
+  background-color: #fff;
+  width: 750px;
+  height: 550px;
+  padding: 10px 30px;
+  position: fixed;
+  left: calc(50% - 350px);
+  top: 5%;
+  border-radius: 10px;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  body .modal-container #modal-toggle_3.active ~ .modal-content, body .modal-container #modal-toggle_3:checked ~ .modal-content {
+    left: 0;
+  }
+}
+body .modal-container #modal-toggle_4 {
+  display: none;
+}
+body .modal-container #modal-toggle_4.active ~ .modal-backdrop, body .modal-container #modal-toggle_4:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+body .modal-container #modal-toggle_4.active ~ .modal-content, body .modal-container #modal-toggle_4:checked ~ .modal-content {
+  background-image: url("../img/background/it.jpg");
+  background-position: top;
+  background-size: cover;
+  opacity: 1;
+  background-color: #fff;
+  width: 950px;
+  height: 550px;
+  padding: 10px 30px;
+  position: fixed;
+  left: calc(50% - 480px);
+  top: 5%;
+  border-radius: 10px;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  body .modal-container #modal-toggle_4.active ~ .modal-content, body .modal-container #modal-toggle_4:checked ~ .modal-content {
     left: 0;
   }
 }
@@ -314,6 +393,9 @@ footer nav .container .social a img:hover {
 }
 #uslugi .container {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #uslugi .container .tariffs_head {
   text-align: center;
@@ -339,9 +421,13 @@ footer nav .container .social a img:hover {
 #uslugi .container .tariffs .item li {
   padding: 5px 0;
   border-bottom: 1px solid #808080;
+  color: #f5f5f5;
 }
 #uslugi .container .tariffs .item li:last-child {
   border-bottom: none;
+}
+#uslugi .container .tariffs .item li:hover {
+  opacity: 0.9;
 }
 #uslugi .container .tariffs .item a {
   text-decoration: none;
@@ -367,6 +453,11 @@ footer nav .container .social a img:hover {
 #uslugi .container .tariffs .item .item_head .item_intro {
   text-align: center;
   opacity: 0.8;
+}
+#uslugi .container button {
+  width: min-content;
+  bottom: 50px;
+  position: relative;
 }
 
 #cause {
@@ -430,40 +521,93 @@ footer nav .container .social a img:hover {
   opacity: 0.5;
   margin-bottom: 40px;
 }
-#keys .keys .keys_items {
+#keys .keys .keys_containers {
+  display: flex;
+}
+#keys .keys .keys_containers .keys_items {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  width: -webkit-fill-available;
 }
-#keys .keys .keys_items .keys_item {
+#keys .keys .keys_containers .keys_items:first-child .keys_item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: -webkit-fill-available;
+  width: auto;
+  height: auto;
+  min-height: 300px;
   padding: 10px;
   background-color: #324577;
   color: #f5f5f5;
   border-radius: 10px;
-  margin: 0 10px;
-  z-index: 5;
+  margin: 10px 10px;
+  background-image: url(../img/background/dance.jpg);
   background-size: cover;
-  background-position: 100% 50%;
+  background-position: bottom;
 }
-#keys .keys .keys_items .keys_item:hover {
+#keys .keys .keys_containers .keys_items:first-child .keys_item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#keys .keys .keys_items .keys_item button {
+#keys .keys .keys_containers .keys_items:first-child .keys_item button {
   background-color: #f5f5f5;
   color: #324577;
 }
-#keys .keys .keys_items .keys_item img {
+#keys .keys .keys_containers .keys_items:first-child .keys_item img {
   width: 75%;
   position: relative;
   bottom: 100px;
   right: 50px;
   margin-bottom: -100px;
   z-index: 1;
+}
+#keys .keys .keys_containers .keys_items:first-child .keys_item p {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+#keys .keys .keys_containers .keys_items .keys_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  padding: 10px;
+  background-color: #324577;
+  color: #f5f5f5;
+  border-radius: 10px;
+  margin: 10px 10px;
+  background-size: cover;
+  background-position: 100% 50%;
+}
+#keys .keys .keys_containers .keys_items .keys_item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#keys .keys .keys_containers .keys_items .keys_item button {
+  background-color: #f5f5f5;
+  color: #324577;
+}
+#keys .keys .keys_containers .keys_items .keys_item button:hover {
+  background-color: #00aeff;
+  box-shadow: 0 0 10px #00aeff;
+  opacity: 1;
+  color: white;
+}
+#keys .keys .keys_containers .keys_items .keys_item img {
+  width: 75%;
+  position: relative;
+  bottom: 100px;
+  right: 50px;
+  margin-bottom: -100px;
+  z-index: 1;
+}
+#keys .keys .keys_containers .keys_items .keys_item p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #review {
@@ -489,7 +633,7 @@ footer nav .container .social a img:hover {
   max-width: -webkit-fill-available;
 }
 #review .review .review_item img:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px #f5f5f5;
 }
 #review .review .slick-initialized .slick-slide {
   margin: 0 20px;
@@ -503,6 +647,7 @@ footer nav .container .social a img:hover {
 }
 #team .team .team_items .team_item .team_item_img {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: -webkit-fill-available;
