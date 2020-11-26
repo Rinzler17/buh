@@ -1250,5 +1250,48 @@ button.btn-floating {
 }
 
 /* MESSENGER */
+@media screen and (max-width: 720px) {
+  header .container {
+    flex-wrap: wrap;
+  }
+
+  #cause .cause .causes {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  #uslugi .container button {
+    bottom: auto;
+  }
+  #uslugi .container .tariffs {
+    flex-direction: column;
+  }
+  #uslugi .container .tariffs .item .item_head {
+    min-height: auto;
+  }
+
+  #keys .keys h2 {
+    font-size: 40px;
+  }
+  #keys .keys .keys_containers {
+    flex-direction: column;
+  }
+
+  #review .review h2 {
+    font-size: 60px;
+  }
+
+  #team .team .team_items .team_item {
+    flex-direction: column;
+  }
+
+  footer nav .container {
+    flex-wrap: wrap;
+  }
+  footer nav .container .social {
+    justify-content: flex-start;
+    margin: 20px 0px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
