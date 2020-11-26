@@ -158,6 +158,60 @@ body{
         }
       }
     }
+    #modal-toggle_5{
+
+      display: none;
+      &.active ~ .modal-backdrop,
+      &:checked ~ .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.2s ease-in;
+      }
+      &.active ~ .modal-content,
+      &:checked ~ .modal-content {
+        opacity: 1;
+        background-color: #fff;
+        max-width: 400px;
+        width: 400px;
+        height: 280px;
+        padding: 10px 30px;
+        position: fixed;
+        left: calc(50% - 200px);
+        top: 12%;
+        border-radius: 4px;
+        z-index: 999;
+        pointer-events: auto;
+        cursor: auto;
+        visibility: visible;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+        @media (max-width: 400px) { left: 0; }
+        h2{
+          color: #324577;
+          text-align: center;
+        }
+        form{
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          input{
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            outline: none;
+            border: 2px solid #00aeff;
+          }
+        }
+      }
+    }
     #modal-toggle_2{
       display: none;
       &.active ~ .modal-backdrop,

@@ -169,6 +169,61 @@ body .modal-container #modal-toggle.active ~ .modal-content form input, body .mo
   outline: none;
   border: 2px solid #00aeff;
 }
+body .modal-container #modal-toggle_5 {
+  display: none;
+}
+body .modal-container #modal-toggle_5.active ~ .modal-backdrop, body .modal-container #modal-toggle_5:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+body .modal-container #modal-toggle_5.active ~ .modal-content, body .modal-container #modal-toggle_5:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 400px;
+  width: 400px;
+  height: 280px;
+  padding: 10px 30px;
+  position: fixed;
+  left: calc(50% - 200px);
+  top: 12%;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  body .modal-container #modal-toggle_5.active ~ .modal-content, body .modal-container #modal-toggle_5:checked ~ .modal-content {
+    left: 0;
+  }
+}
+body .modal-container #modal-toggle_5.active ~ .modal-content h2, body .modal-container #modal-toggle_5:checked ~ .modal-content h2 {
+  color: #324577;
+  text-align: center;
+}
+body .modal-container #modal-toggle_5.active ~ .modal-content form, body .modal-container #modal-toggle_5:checked ~ .modal-content form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .modal-container #modal-toggle_5.active ~ .modal-content form input, body .modal-container #modal-toggle_5:checked ~ .modal-content form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #00aeff;
+}
 body .modal-container #modal-toggle_2 {
   display: none;
 }

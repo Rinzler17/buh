@@ -46,7 +46,7 @@
                 <div class="sentence_item">
                     <h2>С чего начать?</h2>
                     <p>Получите бесплатную консультацию!</p>
-                    <button>Получить решение</button>
+                    <button><label class="modal-btn" for="modal-toggle_5">Получить решение</label></button>
                 </div>
             </div>
         </div>
@@ -214,7 +214,7 @@
                     </div>
                     <div class="team_item_description">
                         <h3>Турилова Оксана</h3>
-                        <p>Крутой специалист, знающий бухгалтерию вдоль и поперек с 2000-го года</p>
+                        <p>Ведущий специалист, главный бухгалтер<br> С 2000-го года начала заниматься финансами и решать задачи разного уровня сложности</p>
                         <div class="team_item_achievements">
                             <h3>Достижения:</h3>
                             <div class="team_item_achievements_items">
@@ -241,7 +241,7 @@
             </div>
             <div class="contacts">
                 <a href="tel:+79177576323">+7 917 75 76 323</a>
-                <a href="mailto:antonturilov@gmail.com">antonturilov@gmail.com</a>
+                <a href="mailto:info.openbuh@gmail.com">info.openbuh@gmail.com</a>
             </div>
         </div>
     </nav>
@@ -255,6 +255,21 @@
     <div class="modal-content">
         <label class="modal-close" for="modal-toggle">&#x2715;</label>
         <h2>Обратный звонок</h2><hr />
+        <form action="php/sendmail.php" method="post">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="tel" name="phone" placeholder="Телефон">
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-container">
+    <input id="modal-toggle_5" type="checkbox">
+
+    <label class="modal-backdrop" for="modal-toggle_5"></label>
+    <div class="modal-content">
+        <label class="modal-close" for="modal-toggle_5">&#x2715;</label>
+        <h2>Заказать консультацию</h2><hr />
         <form action="php/sendmail.php" method="post">
             <input type="text" name="name" placeholder="Имя">
             <input type="tel" name="phone" placeholder="Телефон">
@@ -334,7 +349,7 @@
 
         <li style="background-image: url(img/icons/telephone.svg); background-size: 70%; background-position: center; background-repeat: no-repeat; background-color: #324577; border-radius: 50%;"><a href="tel:+79177576323" title="Позвонить" class="btn-floating red" style="transform: scale(1) translateY(0px) translateX(0px);"></a></li>
 
-        <li style="background-image: url(img/icons/letters.svg); background-size: 70%; background-position: center; background-repeat: no-repeat; background-color: #324577; border-radius: 50%;"><a href="mailto:antonturilov@gmail.com" title="Написать письмо" class="btn-floating red" style="transform: scale(1) translateY(0px) translateX(0px);"></a></li>
+        <li style="background-image: url(img/icons/letters.svg); background-size: 70%; background-position: center; background-repeat: no-repeat; background-color: #324577; border-radius: 50%;"><a href="mailto:info.openbuh@gmail.com" title="Написать письмо" class="btn-floating red" style="transform: scale(1) translateY(0px) translateX(0px);"></a></li>
 
         <!--<li><a href="javascript:jivo_api.open()" title="Открыть чат" class="btn-floating orange" style="opacity: 1; transform: scale(1) translateY(0px) translateX(0px); background-color: #D51F26;"><i class="material-icons jivochat_button">
             <i class="far fa-comment"></i></i></a></li>-->
