@@ -613,6 +613,15 @@ nav {
 #sentence {
   background-color: #f5f5f5;
 
+  marquee{
+    position: absolute;
+    opacity: 0.1;
+    font-size: 250px;
+    top: -17px;
+    z-index: 1;
+    cursor: default;
+  }
+
 
   .sentence {
     display: flex;
@@ -620,6 +629,7 @@ nav {
     align-items: center;
 
     .sentence_item {
+      z-index: 5;
       h2 {
         opacity: 0.6;
       }
@@ -936,7 +946,22 @@ h2.funny-title{/*border-top:5px solid #E0DBDE;border-bottom:5px solid #E0DBDE;*/
   0%{background-position:-300px 0}
   100%{background-position:300px -300px}
 }
-.section-title{-webkit-animation-play-state:running;-moz-animation-play-state:running;animation-play-state:running;color:transparent;background:url(../img/background/fon6.jpg) no-repeat #ECE7EA;background-size:cover;-webkit-text-fill-color:transparent;-moz-text-fill-color:transparent;-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;-webkit-animation:move-background 20s infinite linear alternate;-moz-animation:move-background 20s infinite linear alternate;animation:move-background 20s infinite linear alternate}
+.section-title{
+  -webkit-animation-play-state:running;
+  -moz-animation-play-state:running;
+  animation-play-state:running;
+  color:transparent;
+  background:url(../img/background/fon7.jpg) repeat #ECE7EA;
+  background-size:cover;
+  -webkit-text-fill-color:transparent;
+  -moz-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  -moz-background-clip:text;
+  background-clip:text;
+  -webkit-animation:move-background 20s infinite linear alternate;
+  -moz-animation:move-background 20s infinite linear alternate;
+  animation:move-background 20s infinite linear alternate
+}
 
 
 
