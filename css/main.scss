@@ -619,9 +619,12 @@ nav {
     position: absolute;
     opacity: 0.1;
     font-size: 250px;
-    top: -17px;
+    top: 60px;
     z-index: 1;
     cursor: default;
+    max-height: 230px;
+    display: flex;
+    align-items: center;
   }
 
 
