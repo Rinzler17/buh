@@ -26,6 +26,26 @@
 
         </div>
     </nav>
+
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><img src="img/icons/menu.svg" alt=""></a>
+
+    <div id="slide-out" style="transform: translateX(0%);">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#uslugi">Услуги</a></li>
+            <li><a href="#review">Отзывы</a></li>
+            <li><a href="price.html">Цены</a></li>
+            <li><a href="#team">Контакты</a></li>
+            <li><a href="tel:+79177576323">+7 917 75 76 323</a></li>
+        </ul>
+            <div class="social">
+                <a href="https://vk.com/id106121354"><img src="img/icons/vk.svg" alt=""></a>
+                <a href="https://www.instagram.com/kseniya_fins/"><img src="img/icons/instagram.svg" alt=""></a>
+            </div>
+
+    </div>
+
+
 </header>
 <main>
     <section id="sentence">
@@ -397,7 +417,13 @@ autoplaySpeed: 2000,
 });
 </script>
 
-
+<script>
+    $('.sidenav-trigger').click(
+        function () {
+            $('#slide-out').toggleClass('display_on');
+        }
+    );
+</script>
 
 </body>
 </html>
