@@ -447,15 +447,17 @@ footer nav .container .contacts {
 footer nav .container .social {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 footer nav .container .social a {
   display: flex;
   align-items: center;
-  width: 15%;
-  padding: 0 10px;
+  justify-content: center;
+  width: 30px;
+  margin: 0 10px;
 }
 footer nav .container .social a img {
-  width: 100%;
+  max-width: 30px;
 }
 footer nav .container .social a img:hover {
   filter: opacity(0.5);
