@@ -1300,7 +1300,7 @@ button.btn-floating {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-device-width: 720px) {
   header .container {
     flex-wrap: wrap;
   }
